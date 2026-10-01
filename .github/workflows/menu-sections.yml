@@ -1,0 +1,42 @@
+name: Menu sections regression
+on:
+  push:
+    branches: [main, feat/menu-subsections]
+    paths: ['assets/js/menu.js', 'assets/css/**', 'menu/**', 'tests/menu-sections*', '.github/workflows/menu-sections.yml']
+  pull_request:
+    paths: ['assets/js/menu.js', 'assets/css/**', 'menu/**', 'tests/menu-sections*', '.github/workflows/menu-sections.yml']
+permissions:
+  contents: read
+concurrency:
+  group: menu-sections-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and data regression
+        run: |
+          node --check assets/js/menu.js
+          node --test tests/menu-sections.test.cjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test dependencies
+        run: |
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium webkit
+      - name: Chromium and WebKit mobile/desktop regression
+        run: python tests/menu-sections-browser.py
+      - name: Save fixture screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: menu-sections-fixture-screenshots
+          path: test-results/menu-sections/
+          if-no-files-found: ignore
+          retention-days: 7

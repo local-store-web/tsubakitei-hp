@@ -39,6 +39,45 @@
     return "";
   }
 
+  function renderItems(items) {
+    if (!items.length) return "";
+    var html = '<div class="menu-items">';
+    items.forEach(function (item) {
+      html += '<div class="menu-item">';
+      if (item.image) html += '<img class="thumb" src="' + esc(imageSrc(item.image)) + '" alt="' + esc(item.name) + '" loading="lazy">';
+      html += '<div class="body"><div class="name">' + esc(item.name) + "</div>";
+      if (item.description) html += '<div class="desc">' + esc(item.description) + "</div>";
+      html += "</div>";
+      var p = priceHtml(item);
+      if (p) html += '<div class="price">' + p + "</div>";
+      html += "</div>";
+    });
+    return html + "</div>";
+  }
+
+  // Optional Dinner subcategories. Empty values keep the original flat layout.
+  // Groups follow their first item's sortOrder; items retain their existing order.
+  function renderSectionItems(items) {
+    if (!items.some(function (item) { return !!item.subsectionName; })) {
+      return renderItems(items);
+    }
+    var groups = [];
+    items.forEach(function (item) {
+      var name = item.subsectionName || "";
+      var group = groups.filter(function (entry) { return entry.name === name; })[0];
+      if (!group) {
+        group = { name: name, items: [] };
+        groups.push(group);
+      }
+      group.items.push(item);
+    });
+    return groups.map(function (group) {
+      var html = '<div class="menu-subsection">';
+      if (group.name) html += '<h4 class="menu-subsection-title">' + esc(group.name) + "</h4>";
+      return html + renderItems(group.items) + "</div>";
+    }).join("");
+  }
+
   function render(menu) {
     leadEl.textContent = (menu.description || "").trim();
     var html = "";
@@ -46,20 +85,7 @@
       if (!sec.items.length && !sec.description) return;
       html += '<div class="menu-section"><h3>' + esc(sec.name) + "</h3>";
       if (sec.description) html += '<p class="sec-desc">' + esc(sec.description) + "</p>";
-      if (sec.items.length) {
-        html += '<div class="menu-items">';
-        sec.items.forEach(function (item) {
-          html += '<div class="menu-item">';
-          if (item.image) html += '<img class="thumb" src="' + esc(imageSrc(item.image)) + '" alt="' + esc(item.name) + '" loading="lazy">';
-          html += '<div class="body"><div class="name">' + esc(item.name) + "</div>";
-          if (item.description) html += '<div class="desc">' + esc(item.description) + "</div>";
-          html += "</div>";
-          var p = priceHtml(item);
-          if (p) html += '<div class="price">' + p + "</div>";
-          html += "</div>";
-        });
-        html += "</div>";
-      }
+      html += renderSectionItems(sec.items);
       html += "</div>";
     });
     bodyEl.innerHTML = html;
@@ -186,7 +212,8 @@
           price: price,
           priceText: row.priceText || "",
           image: image,
-          sortOrder: row.sortOrder
+          sortOrder: row.sortOrder,
+          subsectionName: menuId === "dinner-menu" ? String(selectedValue(row.subsectionName) || "").trim() : ""
         });
       }
     });
@@ -197,28 +224,52 @@
     };
   }
 
-  function microCmsUrl() {
-    return microCmsUrlFor(CMS_CONFIG.endpoint);
-  }
-
   function microCmsUrlFor(endpoint) {
     var queries = CMS_CONFIG.queries || "limit=100&orders=sortOrder";
     return "https://" + CMS_CONFIG.serviceDomain + ".microcms.io/api/v1/" + endpoint + "?" + queries;
   }
 
+  // Read every page, including hidden records; filtering happens afterwards.
+  // Otherwise adding drink items can push existing menus past the first 100 rows.
+  function fetchCmsContents(endpoint) {
+    var baseUrl = new URL(microCmsUrlFor(endpoint));
+    baseUrl.searchParams.set("limit", "100");
+    // A stable tie-breaker avoids ambiguous page boundaries when sortOrder repeats.
+    if (baseUrl.searchParams.get("orders") === "sortOrder") {
+      baseUrl.searchParams.set("orders", "sortOrder,createdAt");
+    }
+    var contents = [];
+    function readPage(offset) {
+      var url = new URL(baseUrl.toString());
+      url.searchParams.set("offset", String(offset));
+      return fetchJson(url.toString(), {
+        cache: "no-cache",
+        headers: { "X-MICROCMS-API-KEY": CMS_CONFIG.apiKey }
+      }).then(function (data) {
+        if (!Array.isArray(data.contents)) throw new Error("Invalid microCMS list response");
+        if (typeof data.offset === "number" && data.offset !== offset) {
+          throw new Error("Unexpected microCMS page offset");
+        }
+        var nextOffset = offset + data.contents.length;
+        var total = numberOrNull(data.totalCount);
+        contents = contents.concat(data.contents);
+        if (total !== null && nextOffset < total) {
+          if (!data.contents.length) throw new Error("Incomplete microCMS menu response");
+          return readPage(nextOffset);
+        }
+        return { contents: contents };
+      });
+    }
+    return readPage(0);
+  }
+
   function fetchLegacyMenu() {
-    return fetchJson(microCmsUrlFor(CMS_CONFIG.fallbackEndpoint), {
-      cache: "no-cache",
-      headers: { "X-MICROCMS-API-KEY": CMS_CONFIG.apiKey }
-    });
+    return fetchCmsContents(CMS_CONFIG.fallbackEndpoint);
   }
 
   function loadMenuData() {
     if (CMS_CONFIG.enabled && CMS_CONFIG.serviceDomain && CMS_CONFIG.endpoint && CMS_CONFIG.apiKey) {
-      return fetchJson(microCmsUrl(), {
-        cache: "no-cache",
-        headers: { "X-MICROCMS-API-KEY": CMS_CONFIG.apiKey }
-      }).then(function (data) {
+      return fetchCmsContents(CMS_CONFIG.endpoint).then(function (data) {
         if (CMS_CONFIG.fallbackEndpoint && (!data.contents || !data.contents.length)) {
           console.warn("microCMS split menu is empty. Fallback to legacy endpoint.");
           return fetchLegacyMenu();
