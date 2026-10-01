@@ -30,6 +30,7 @@ const tsubakiteiHeaders = [
   "sortOrder",
   "menuId",
   "sectionName",
+  "subsectionName",
   "name",
   "sectionDescription",
   "priceText",
@@ -60,10 +61,11 @@ function variantText(item) {
 }
 
 function priceText(item) {
+  if (item.priceText) return item.priceText;
   const variant = variantText(item);
   if (variant) return variant;
   if (item.price && Number(item.price) > 0) return `￥${Number(item.price).toLocaleString("ja-JP")}`;
-  return item.priceText || "";
+  return "";
 }
 
 function menuIdLabel(menuId) {
@@ -101,6 +103,7 @@ for (const menu of source.menus || []) {
         sortOrder: row.sortOrder,
         menuId: menuIdLabel(row.menuId),
         sectionName: row.sectionName,
+        subsectionName: item.subsectionName || "",
         name: row.name,
         sectionDescription: row.sectionDescription,
         priceText: row.priceText,
