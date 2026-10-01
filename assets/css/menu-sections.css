@@ -1,0 +1,16 @@
+/* Optional Dinner subheadings; the existing menu/card styles stay unchanged. */
+#menu-body .menu-subsection + .menu-subsection { margin-top: 24px; }
+#menu-body .menu-subsection-title {
+  margin: 18px 0 12px;
+  padding-left: 12px;
+  border-left: 4px solid var(--red);
+  color: var(--red-dark);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.6;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 640px) {
+  #menu-body .menu-subsection-title { font-size: 1rem; }
+}
