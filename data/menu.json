@@ -12,49 +12,85 @@
           "items": [
             {
               "name": "A. ハンバーグステーキ",
-              "description": "",
-              "price": 1200,
+              "description": "+100円で温泉たまご付けられます！",
+              "priceText": "Sサイズ（150g） ￥1,100 / Mサイズ（185g） ￥1,200",
               "image": "assets/img/menu/9cfb46_c7c1cad32b2346c7984056ec038a60d3.png"
             },
             {
-              "name": "B. 豚肉の生姜焼き",
+              "name": "B. 豚ロースの生姜焼き",
               "description": "",
-              "price": 1200,
+              "priceText": "Sサイズ（100g） ￥1,100 / Mサイズ（125g） ￥1,200",
               "image": "assets/img/menu/9cfb46_e69d275898444c7993fc8171bfff4dc8.png"
             },
             {
               "name": "C. 白身魚フライ",
               "description": "",
-              "price": 1200,
+              "priceText": "Sサイズ（白身魚フライ3個） ￥1,100 / Mサイズ（白身魚フライ3個＋北海道産ホタテフライ1個） ￥1,200",
               "image": "assets/img/menu/9cfb46_2b5cb4610bce45febc3487d0c2ae2b46.png"
             },
             {
-              "name": "D. エビフライ",
-              "description": "※限定10食",
-              "price": 1200,
+              "name": "D. エビフライ（数量限定）",
+              "description": "",
+              "priceText": "Sサイズ（エビフライ2本） ￥1,100 / Mサイズ（エビフライ3本） ￥1,300",
               "image": "assets/img/menu/9cfb46_11ac4bbe422a49a4822c5633de73912e.png"
             },
             {
-              "name": "E. ミックスフライ（エビ、白身魚、ホタテ）",
-              "description": "※限定10食",
-              "price": 1200,
+              "name": "E. ミックスフライ（エビ1本、白身魚2個、北海道産ホタテ1個）",
+              "description": "",
+              "priceText": "￥1,400",
               "image": "assets/img/menu/9cfb46_442a30d01ccf4b5f938880101f5126a6.jpg"
+            },
+            {
+              "name": "F. 洋食屋のカレー（辛口欧風カレー）",
+              "description": "",
+              "priceText": "￥1,300"
+            },
+            {
+              "name": "G. 本日の日替わり（数量限定）",
+              "description": "",
+              "priceText": "卓上の紙にてご案内"
             }
           ]
         },
         {
-          "name": "単品",
+          "name": "トッピングメニュー",
+          "description": "",
+          "items": [
+            {
+              "name": "温泉たまご",
+              "description": "",
+              "priceText": "￥100"
+            },
+            {
+              "name": "エビフライ 1本",
+              "description": "",
+              "priceText": "￥450"
+            },
+            {
+              "name": "北海道産ホタテフライ 1個",
+              "description": "",
+              "priceText": "￥300"
+            },
+            {
+              "name": "洋食屋のカレールー",
+              "description": "",
+              "priceText": "￥500"
+            }
+          ]
+        },
+        {
+          "name": "サイドメニュー",
           "description": "",
           "items": [
             {
               "name": "洋食屋のポテトサラダ",
               "description": "",
-              "price": 580
+              "priceText": "￥600"
             },
             {
-              "name": "冷製ラタトゥイユ",
+              "name": "季節野菜のラタトゥイユ",
               "description": "",
-              "price": 580
+              "priceText": "￥600"
             }
           ]
         },
@@ -63,54 +99,54 @@
           "description": "",
           "items": [
             {
-              "name": "そば茶",
-              "description": "",
-              "price": 200
-            },
-            {
-              "name": "ウーロン茶",
-              "description": "",
-              "price": 200
-            },
-            {
-              "name": "ジャスミン茶",
-              "description": "",
-              "price": 200
-            },
-            {
-              "name": "紅茶(アイス・ホット)",
-              "description": "",
-              "price": 200
-            },
-            {
-              "name": "アイスコーヒー",
-              "description": "",
-              "price": 200
-            },
-            {
-              "name": "竹炭コーヒー",
-              "description": " (竹の炭で焙煎された豆です)",
-              "price": 200
-            },
-            {
               "name": "オレンジジュース",
               "description": "",
-              "price": 200
+              "priceText": "￥200"
             },
             {
               "name": "グレープフルーツジュース",
               "description": "",
-              "price": 200
+              "priceText": "￥200"
             },
             {
               "name": "アップルジュース",
               "description": "",
-              "price": 200
+              "priceText": "￥200"
             },
             {
               "name": "トマトジュース",
               "description": "",
-              "price": 200
+              "priceText": "￥200"
+            },
+            {
+              "name": "そば茶",
+              "description": "",
+              "priceText": "￥200"
+            },
+            {
+              "name": "ウーロン茶",
+              "description": "",
+              "priceText": "￥200"
+            },
+            {
+              "name": "ジャスミン茶",
+              "description": "",
+              "priceText": "￥200"
+            },
+            {
+              "name": "紅茶（ICE・HOT）",
+              "description": "",
+              "priceText": "￥200"
+            },
+            {
+              "name": "アイスコーヒー",
+              "description": "",
+              "priceText": "￥200"
+            },
+            {
+              "name": "竹炭コーヒー（HOT）",
+              "description": "竹の炭で焙煎された豆です",
+              "priceText": "￥200"
             }
           ]
         },
@@ -121,22 +157,22 @@
             {
               "name": "ランチビール",
               "description": "",
-              "price": 300
+              "priceText": "￥300"
             },
             {
-              "name": "ワイングラス (赤・白)",
+              "name": "ワイングラス（赤・白）",
               "description": "",
-              "price": 300
-            },
-            {
-              "name": "サッポロビール",
-              "description": "",
-              "price": 500
+              "priceText": "￥300"
             },
             {
               "name": "スパークリングワイン",
               "description": "",
-              "price": 300
+              "priceText": "￥300"
+            },
+            {
+              "name": "サッポロ生ビール（大）",
+              "description": "",
+              "priceText": "￥500"
             }
           ]
         }
@@ -355,18 +391,221 @@
           ]
         },
         {
-          "name": "ドリンク",
+          "name": "アルコール",
           "description": "",
           "items": [
             {
-              "name": "アルコール",
-              "description": "・サッポロ生ビール\n・樽生スパークリングワイン\n・グラスワイン 赤/白\n・Deward’s (ウイスキー)\n・Deward’s ハイボール/コーク/ジンジャーエール\n・サッポロ焼酎\n・レモンサワー\n・グレープフルーツサワー",
-              "price": 0
+              "description": "",
+              "name": "生ビール",
+              "priceText": "￥550（税込￥605）"
             },
             {
-              "name": "リキュール",
-              "description": "・カシス\n・カンパリ\n・ウォッカ\n・ラム\n・ウイスキー",
-              "price": 0
+              "description": "",
+              "name": "小ビール",
+              "priceText": "￥380（税込￥418）"
+            },
+            {
+              "description": "",
+              "name": "ハイボール（Dewar's）",
+              "priceText": "￥550（税込￥605）"
+            },
+            {
+              "description": "",
+              "name": "レモンサワー",
+              "priceText": "￥500（税込￥550）"
+            },
+            {
+              "description": "",
+              "name": "スパークリングワイン グラス",
+              "priceText": "￥550（税込￥605）"
+            },
+            {
+              "description": "",
+              "name": "ハウスワイン（赤・白）グラス",
+              "priceText": "￥550（税込￥605）"
+            },
+            {
+              "description": "",
+              "name": "ハウスワイン カラフェ",
+              "priceText": "￥1,650（税込￥1,815）"
+            },
+            {
+              "description": "",
+              "name": "ウーロンハイ",
+              "priceText": "￥550（税込￥605）"
+            },
+            {
+              "description": "",
+              "name": "ジャスミンハイ",
+              "priceText": "￥550（税込￥605）"
+            },
+            {
+              "description": "",
+              "name": "鍛高譚（紫蘇焼酎）",
+              "priceText": "￥550（税込￥605）"
+            },
+            {
+              "description": "",
+              "name": "れんと（黒糖焼酎）",
+              "priceText": "￥550（税込￥605）"
+            },
+            {
+              "description": "",
+              "name": "花札焼酎（芋・麦）",
+              "priceText": "￥600（税込￥660）"
+            },
+            {
+              "description": "",
+              "name": "I.W. ハーパー",
+              "priceText": "￥600（税込￥660）",
+              "subsectionName": "ウイスキー各種"
+            },
+            {
+              "description": "",
+              "name": "ブラントン",
+              "priceText": "￥950（税込￥1,045）",
+              "subsectionName": "ウイスキー各種"
+            },
+            {
+              "description": "",
+              "name": "ラフロイグ 10年",
+              "priceText": "￥950（税込￥1,045）",
+              "subsectionName": "ウイスキー各種"
+            },
+            {
+              "description": "",
+              "name": "シーバスリーガル ミズナラ 12年",
+              "priceText": "￥950（税込￥1,045）",
+              "subsectionName": "ウイスキー各種"
+            },
+            {
+              "description": "",
+              "name": "山崎（ノンエイジ）",
+              "priceText": "￥950（税込￥1,045）",
+              "subsectionName": "ウイスキー各種"
+            },
+            {
+              "description": "",
+              "name": "山崎 12年",
+              "priceText": "時価（スタッフにお尋ねください）",
+              "subsectionName": "ウイスキー各種"
+            },
+            {
+              "description": "",
+              "name": "カミュ VSOP",
+              "priceText": "￥950（税込￥1,045）",
+              "subsectionName": "ブランデー"
+            },
+            {
+              "description": "美味しいのあります！スタッフにお問い合わせください。",
+              "name": "日本酒",
+              "priceText": "",
+              "subsectionName": "日本酒"
+            },
+            {
+              "description": "",
+              "name": "花札梅酒",
+              "priceText": "￥600（税込￥660）",
+              "subsectionName": "リキュール"
+            },
+            {
+              "description": "",
+              "name": "とろとろ梅酒",
+              "priceText": "￥700（税込￥770）",
+              "subsectionName": "リキュール"
+            },
+            {
+              "description": "",
+              "name": "赤短梅酒",
+              "priceText": "￥750（税込￥825）",
+              "subsectionName": "リキュール"
+            },
+            {
+              "description": "",
+              "name": "自家製サングリア（赤・白）",
+              "priceText": "￥650（税込￥715）",
+              "subsectionName": "リキュール"
+            }
+          ]
+        },
+        {
+          "name": "ソフトドリンク",
+          "description": "",
+          "items": [
+            {
+              "name": "100% オレンジジュース",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "100% グレープフルーツジュース",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "100% アップルジュース",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "100% トマトジュース",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "コーラ",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "ジンジャーエール",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "そば茶",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "ウーロン茶",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "ジャスミン茶",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "竹炭コーヒー（HOT）〜竹炭焙煎〜",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "アイスコーヒー",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "エスプレッソ",
+              "description": "",
+              "priceText": "￥500（税込￥550）"
+            },
+            {
+              "name": "紅茶（ICE・HOT）",
+              "description": "",
+              "priceText": "￥400（税込￥440）"
+            },
+            {
+              "name": "バナナ MIX スペシャル",
+              "description": "",
+              "priceText": "￥650（税込￥715）"
+            },
+            {
+              "name": "いちご MIX スペシャル",
+              "description": "",
+              "priceText": "￥650（税込￥715）"
             }
           ]
         }
