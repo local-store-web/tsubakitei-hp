@@ -66,4 +66,11 @@
 @media (max-width: 640px) {
   #menu-body .menu-subsection-title { font-size: 1rem; }
   #menu-body .menu-item--dinner-main .price { white-space: normal; }
+  #menu-body .menu-item .size-price-line--variant {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    column-gap: 10px;
+    width: 100%;
+  }
 }
