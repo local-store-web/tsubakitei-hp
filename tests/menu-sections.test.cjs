@@ -166,9 +166,10 @@ test('Dinner moves item notes into their cards and shows TO only for flagged ite
   assert.ok(ui.html().includes('<span class="size-price-line">'));
 });
 
-test('Price formatter only strips currency symbols from price fields', () => {
+test('Price formatter removes currency marks and each, groups thousands, and preserves ordinary text', () => {
   assert.equal(price.formatPriceText('￥550（税込￥605） / ¥700'), '550（税込605） / 700');
-  assert.equal(price.formatDinnerPriceText('￥550（税込￥605） / 1500(1650)'), '550 (605) / 1500 (1650)');
+  assert.equal(price.formatPriceText('Sサイズ 1100 / Mサイズ 1200 / 各￥200 / 1400'), 'Sサイズ 1,100 / Mサイズ 1,200 / 200 / 1,400');
+  assert.equal(price.formatDinnerPriceText('￥550（税込￥605） / 1500(1650)'), '550 (605) / 1,500 (1,650)');
   assert.equal(price.formatDinnerPriceText('850(935)  (＋300円でトッピング)'), '850 (935)  (＋300円でトッピング)');
   assert.equal(price.formatPriceText('150円（税別）'), '150円（税別）');
 });
