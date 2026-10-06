@@ -11,6 +11,59 @@
   white-space: normal;
   overflow-wrap: anywhere;
 }
+#menu-body .name-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 5px 10px; }
+#menu-body .takeout-badge {
+  display: inline-block;
+  flex: none;
+  padding: 2px 8px;
+  border: 1px solid var(--red);
+  border-radius: 999px;
+  color: var(--red-dark);
+  font-size: .7rem;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+#menu-body .takeout-limit { color: var(--ink-soft); font-size: .72rem; }
+#menu-body .menu-item--dinner-main .name-details {
+  margin-top: 6px;
+  color: var(--ink-soft);
+  font-size: .82rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+#menu-body .menu-item--dinner-main .desc { margin-top: 8px; }
+#menu-body .menu-item--dinner-main .size-price-line { display: block; }
+#menu-body .menu-main-group { display: grid; gap: 14px; }
+#menu-body .price-note {
+  margin: 4px 0 12px;
+  color: var(--ink-soft);
+  font-size: .86rem;
+  text-align: center;
+}
+@media (min-width: 861px) {
+  #menu-body .menu-main-group { grid-auto-rows: 1fr; }
+  #menu-body .menu-item--dinner-main {
+    display: grid;
+    grid-template-columns: 74px minmax(0, 1fr);
+    grid-template-areas: "thumb body" ". price";
+    grid-template-rows: 1fr auto;
+    align-items: start;
+    column-gap: 18px;
+    row-gap: 10px;
+  }
+  #menu-body .menu-item--dinner-main .thumb { grid-area: thumb; }
+  #menu-body .menu-item--dinner-main .body { grid-area: body; }
+  #menu-body .menu-item--dinner-main .price {
+    grid-area: price;
+    min-width: 0;
+    white-space: normal;
+    line-height: 1.6;
+    text-align: left;
+  }
+}
 @media (max-width: 640px) {
   #menu-body .menu-subsection-title { font-size: 1rem; }
+  #menu-body .menu-item--dinner-main .price { white-space: normal; }
 }

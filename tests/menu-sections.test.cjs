@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const source = fs.readFileSync(path.join(__dirname, '../assets/js/menu.js'), 'utf8');
+const price = require('../assets/js/price-format.js');
 const escape = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 class Element {
   constructor() {
@@ -43,7 +44,7 @@ async function boot(rows, options = {}) {
     return { ok: true, json: async () => ({ contents: structuredClone(page), totalCount: data.length, offset, limit: 100 }) };
   };
   vm.runInNewContext(options.source || source, {
-    window: { TSUBAKITEI_MENU_CMS: cfg }, URL, fetch,
+    window: { TSUBAKITEI_MENU_CMS: cfg, TsubakiteiPrice: price }, URL, fetch,
     document: { getElementById: id => nodes[id], createElement: () => new Element() },
     console: { warn: (...args) => logs.push(args), error: (...args) => logs.push(args) }
   });
@@ -140,6 +141,39 @@ test('New subcategory headings are escaped; blank fields keep old layout', async
   assert.ok(!flat.html().includes('menu-subsection'));
 });
 
+test('Dinner moves item notes into their cards and shows TO only for flagged items', async () => {
+  const ui = await boot([
+    row('ハンバーグステーキ 定食　■Sサイズ　■Mサイズ　■Lサイズ', 'Dinner', 'ディナーメニュー', 10, {
+      sectionDescription: '※Sサイズには温泉たまごは付きません。100円で付けられます。\nLサイズ以上のオーダーも可能です。',
+      priceText: '■S定食 ￥1,250・S単品 ￥1,050　■M定食 ￥1,450・M単品 ￥1,250　■L定食 ￥1,650・L単品 ￥1,450',
+      takeoutAvailable: true
+    }),
+    row('豚ロース生姜焼き　■Sサイズ　■Mサイズ　■Lサイズ', 'Dinner', 'ディナーメニュー', 20, {
+      sectionDescription: '100円で玉ねぎが一緒に焼けます。', takeoutAvailable: true,
+      priceText: '■S定食 ￥1,250　■M定食 ￥1,450　■L定食 ￥1,650'
+    }),
+    row('対象外', 'Dinner', 'ディナーメニュー', 30)
+  ]);
+  ui.tab('Dinner');
+  assert.ok(!ui.html().includes('class="sec-desc"'));
+  assert.ok(ui.html().includes('カッコ内は税込価格です。'));
+  assert.equal((ui.html().match(/※Sサイズには/g) || []).length, 1);
+  assert.equal((ui.html().match(/class="takeout-badge"/g) || []).length, 2);
+  assert.equal((ui.html().match(/M・Lサイズのみ/g) || []).length, 2);
+  assert.equal((ui.html().match(/class="menu-main-group"/g) || []).length, 1);
+  assert.ok(ui.html().includes('1,250'));
+  assert.ok(!/[¥￥]/.test(ui.html()));
+  assert.ok(ui.html().includes('<span class="size-price-line">'));
+});
+
+test('Price formatter removes currency marks and each, groups thousands, and preserves ordinary text', () => {
+  assert.equal(price.formatPriceText('￥550（税込￥605） / ¥700'), '550（税込605） / 700');
+  assert.equal(price.formatPriceText('Sサイズ 1100 / Mサイズ 1200 / 各￥200 / 1400'), 'Sサイズ 1,100 / Mサイズ 1,200 / 200 / 1,400');
+  assert.equal(price.formatDinnerPriceText('￥550（税込￥605） / 1500(1650)'), '550 (605) / 1,500 (1,650)');
+  assert.equal(price.formatDinnerPriceText('850(935)  (＋300円でトッピング)'), '850 (935)  (＋300円でトッピング)');
+  assert.equal(price.formatPriceText('150円（税別）'), '150円（税別）');
+});
+
 test('Local fallback retains image, size prices and description-only sections', async () => {
   const local = { menus: [{ id: 'menu', sections: [
     { name: 'ランチメニュー', items: [{ name: '主菜', image: 'assets/img/fixture.png', variants: [{ name: 'S', price: 1100 }, { name: 'M', price: 1200 }] }] },
@@ -147,7 +181,7 @@ test('Local fallback retains image, size prices and description-only sections', 
   ] }] };
   const ui = await boot([], { config: { enabled: false }, local });
   assert.ok(ui.html().includes('src="../assets/img/fixture.png"'));
-  assert.ok(ui.html().includes('<small>S</small> ￥1,100 / <small>M</small> ￥1,200'));
+  assert.ok(ui.html().includes('<small>S</small> 1,100 / <small>M</small> 1,200'));
   assert.ok(ui.html().includes('<h3>共通案内</h3>'));
   assert.equal(ui.requests.length, 1);
 });
