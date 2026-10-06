@@ -38,6 +38,14 @@
           return '<span class="size-price-line">' + esc(line.trim()) + '</span>';
         }).join("");
       }
+      var sizePrices = formatted.split(/\s*\/\s*(?=Mサイズ)/);
+      if (sizePrices.length === 2 && /^Sサイズ/.test(sizePrices[0]) && /^Mサイズ/.test(sizePrices[1])) {
+        return sizePrices.map(function (line) {
+          var match = line.match(/^(Sサイズ|Mサイズ)(.*?)\s+([\d,]+)$/);
+          if (!match) return '<span class="size-price-line">' + esc(line.trim()) + '</span>';
+          return '<span class="size-price-line size-price-line--variant"><span>' + esc(match[1] + match[2].trim()) + '</span><span>' + esc(match[3]) + '</span></span>';
+        }).join("");
+      }
       return esc(formatted);
     }
     if (item.variants && item.variants.length) {
