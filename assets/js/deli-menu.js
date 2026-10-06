@@ -6,6 +6,7 @@
   var basePath = scriptSrc.replace(/assets\/js\/deli-menu\.js(?:\?.*)?$/, "");
   var LOCAL_DATA_URL = basePath + "data/deli-menu.json";
   var CMS_CONFIG = window.TSUBAKITEI_DELI_MENU_CMS || {};
+  var formatPriceText = window.TsubakiteiPrice.formatPriceText;
   var bodyEl = document.getElementById("deli-menu-body");
 
   function esc(s) {
@@ -15,7 +16,7 @@
   }
 
   function yen(n) {
-    return "￥" + Number(n).toLocaleString("ja-JP");
+    return Number(n).toLocaleString("ja-JP");
   }
 
   function imageSrc(src) {
@@ -37,7 +38,7 @@
   }
 
   function priceText(item) {
-    if (item.priceText) return item.priceText;
+    if (item.priceText) return formatPriceText(item.priceText);
     if (item.price && item.price > 0) return yen(item.price);
     return "";
   }
@@ -135,7 +136,7 @@
         '<div class="deli-body"><div class="deli-name">' + esc(item.name) + '</div>' +
         (item.description ? '<div class="deli-desc">' + esc(item.description) + '</div>' : '') +
         '</div>' +
-        '<div class="deli-price">' + esc(p || "￥...") + '</div>' +
+        '<div class="deli-price">' + esc(p || "...") + '</div>' +
         '</div>';
     }).join("");
   }

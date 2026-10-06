@@ -71,6 +71,7 @@ try:
                     page.on('pageerror', lambda error: errors.append(str(error)))
                     page.goto(origin + '/menu/', wait_until='networkidle')
                     expect(page.locator('#menu-body .menu-item')).to_have_count(4)
+                    assert '￥' not in page.locator('#menu-body').inner_text()
                     expect(page.locator('#menu-body h3')).to_have_text(['ランチメニュー', 'トッピングメニュー', 'サイドメニュー'])
                     assert offsets == [0, 100], offsets
                     if width < 500:
@@ -83,6 +84,7 @@ try:
                     expect(page.locator('#menu-body h3')).to_have_text(['アルコール', 'ソフトドリンク'])
                     expect(page.locator('#menu-body h4')).to_have_text(['ウイスキー各種', 'ブランデー'])
                     expect(page.locator('#menu-body .menu-item')).to_have_count(5)
+                    assert '￥' not in page.locator('#menu-body').inner_text()
                     assert '非表示fixture' not in page.locator('#menu-body').inner_text()
                     assert page.evaluate('document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1')
                     if width == 390:

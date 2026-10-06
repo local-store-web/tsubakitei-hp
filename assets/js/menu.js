@@ -7,13 +7,14 @@
   var LABELS = { "menu": "Lunch", "dinner-menu": "Dinner", "course-menu": "Course" };
   var MENU_ORDER = ["menu", "dinner-menu", "course-menu"];
   var CMS_CONFIG = window.TSUBAKITEI_MENU_CMS || {};
+  var formatPriceText = window.TsubakiteiPrice.formatPriceText;
 
   var tabsEl = document.getElementById("menu-tabs");
   var leadEl = document.getElementById("menu-lead");
   var bodyEl = document.getElementById("menu-body");
 
   function yen(n) {
-    return "￥" + Number(n).toLocaleString("ja-JP");
+    return Number(n).toLocaleString("ja-JP");
   }
 
   function esc(s) {
@@ -29,7 +30,15 @@
   }
 
   function priceHtml(item) {
-    if (item.priceText) return esc(item.priceText);
+    if (item.priceText) {
+      var formatted = formatPriceText(item.priceText);
+      if (item.isDinnerMain) {
+        return formatted.split(/(?=■[SML]定食)/).filter(Boolean).map(function (line) {
+          return '<span class="size-price-line">' + esc(line.trim()) + '</span>';
+        }).join("");
+      }
+      return esc(formatted);
+    }
     if (item.variants && item.variants.length) {
       return item.variants
         .map(function (v) { return "<small>" + esc(v.name) + "</small> " + yen(v.price); })
@@ -39,27 +48,40 @@
     return "";
   }
 
-  function renderItems(items) {
+  function renderItems(items, menuId) {
     if (!items.length) return "";
     var html = '<div class="menu-items">';
-    items.forEach(function (item) {
-      html += '<div class="menu-item">';
+    items.forEach(function (item, index) {
+      var isDinnerMain = menuId === "dinner-menu" && !!(item.priceText && /■S定食/.test(item.priceText));
+      var previousIsDinnerMain = index > 0 && menuId === "dinner-menu" && !!(items[index - 1].priceText && /■S定食/.test(items[index - 1].priceText));
+      var nextIsDinnerMain = index + 1 < items.length && menuId === "dinner-menu" && !!(items[index + 1].priceText && /■S定食/.test(items[index + 1].priceText));
+      if (isDinnerMain && !previousIsDinnerMain) html += '<div class="menu-main-group">';
+      var nameParts = isDinnerMain ? String(item.name || "").split(/\u3000+/) : [];
+      var displayName = isDinnerMain ? nameParts.shift() : item.name;
+      html += '<div class="menu-item' + (isDinnerMain ? ' menu-item--dinner-main' : '') + '">';
       if (item.image) html += '<img class="thumb" src="' + esc(imageSrc(item.image)) + '" alt="' + esc(item.name) + '" loading="lazy">';
-      html += '<div class="body"><div class="name">' + esc(item.name) + "</div>";
+      html += '<div class="body"><div class="name-row"><div class="name">' + esc(displayName) + "</div>";
+      if (menuId === "dinner-menu" && item.takeoutAvailable === true) {
+        html += '<span class="takeout-badge">TO可</span>';
+        if (isDinnerMain) html += '<span class="takeout-limit">M・Lサイズのみ</span>';
+      }
+      html += "</div>";
+      if (nameParts.length) html += '<div class="name-details">' + esc(nameParts.join("\n")) + "</div>";
       if (item.description) html += '<div class="desc">' + esc(item.description) + "</div>";
       html += "</div>";
-      var p = priceHtml(item);
+      var p = priceHtml({ priceText: item.priceText, variants: item.variants, price: item.price, isDinnerMain: isDinnerMain });
       if (p) html += '<div class="price">' + p + "</div>";
       html += "</div>";
+      if (isDinnerMain && !nextIsDinnerMain) html += "</div>";
     });
     return html + "</div>";
   }
 
   // Optional Dinner subcategories. Empty values keep the original flat layout.
   // Groups follow their first item's sortOrder; items retain their existing order.
-  function renderSectionItems(items) {
+  function renderSectionItems(items, menuId) {
     if (!items.some(function (item) { return !!item.subsectionName; })) {
-      return renderItems(items);
+      return renderItems(items, menuId);
     }
     var groups = [];
     items.forEach(function (item) {
@@ -74,7 +96,7 @@
     return groups.map(function (group) {
       var html = '<div class="menu-subsection">';
       if (group.name) html += '<h4 class="menu-subsection-title">' + esc(group.name) + "</h4>";
-      return html + renderItems(group.items) + "</div>";
+      return html + renderItems(group.items, menuId) + "</div>";
     }).join("");
   }
 
@@ -85,7 +107,7 @@
       if (!sec.items.length && !sec.description) return;
       html += '<div class="menu-section"><h3>' + esc(sec.name) + "</h3>";
       if (sec.description) html += '<p class="sec-desc">' + esc(sec.description) + "</p>";
-      html += renderSectionItems(sec.items);
+      html += renderSectionItems(sec.items, menu.id);
       html += "</div>";
     });
     bodyEl.innerHTML = html;
@@ -183,6 +205,11 @@
       var sectionName = selectedValue(row.sectionNameSingle) || selectedValue(row.sectionNameSelect) || selectedValue(row.sectionName) || "その他";
       var sectionDescription = row.sectionDescription || "";
       var itemDescription = row.description || "";
+      // Existing Dinner item notes are stored in sectionDescription in microCMS.
+      if (menuId === "dinner-menu" && sectionName === "ディナーメニュー" && row.name && sectionDescription) {
+        itemDescription = [itemDescription, sectionDescription].filter(Boolean).join("\n");
+        sectionDescription = "";
+      }
       if (menuId === "course-menu" && sectionName === "コース料理" && !itemDescription) {
         var priceDescriptionIndex = sectionDescription.indexOf("(税込");
         if (priceDescriptionIndex >= 0) {
@@ -213,6 +240,7 @@
           priceText: row.priceText || "",
           image: image,
           sortOrder: row.sortOrder,
+          takeoutAvailable: row.takeoutAvailable === true,
           subsectionName: menuId === "dinner-menu" ? String(selectedValue(row.subsectionName) || "").trim() : ""
         });
       }
