@@ -156,6 +156,7 @@ test('Dinner moves item notes into their cards and shows TO only for flagged ite
   ]);
   ui.tab('Dinner');
   assert.ok(!ui.html().includes('class="sec-desc"'));
+  assert.ok(ui.html().includes('カッコ内は税込価格です。'));
   assert.equal((ui.html().match(/※Sサイズには/g) || []).length, 1);
   assert.equal((ui.html().match(/class="takeout-badge"/g) || []).length, 2);
   assert.equal((ui.html().match(/M・Lサイズのみ/g) || []).length, 2);
@@ -167,6 +168,8 @@ test('Dinner moves item notes into their cards and shows TO only for flagged ite
 
 test('Price formatter only strips currency symbols from price fields', () => {
   assert.equal(price.formatPriceText('￥550（税込￥605） / ¥700'), '550（税込605） / 700');
+  assert.equal(price.formatDinnerPriceText('￥550（税込￥605） / 1500(1650)'), '550 (605) / 1500 (1650)');
+  assert.equal(price.formatDinnerPriceText('850(935)  (＋300円でトッピング)'), '850 (935)  (＋300円でトッピング)');
   assert.equal(price.formatPriceText('150円（税別）'), '150円（税別）');
 });
 

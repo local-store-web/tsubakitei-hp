@@ -36,6 +36,12 @@
 #menu-body .menu-item--dinner-main .desc { margin-top: 8px; }
 #menu-body .menu-item--dinner-main .size-price-line { display: block; }
 #menu-body .menu-main-group { display: grid; gap: 14px; }
+#menu-body .price-note {
+  margin: 4px 0 12px;
+  color: var(--ink-soft);
+  font-size: .86rem;
+  text-align: center;
+}
 @media (min-width: 861px) {
   #menu-body .menu-main-group { grid-auto-rows: 1fr; }
   #menu-body .menu-item--dinner-main {

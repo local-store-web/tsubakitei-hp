@@ -8,6 +8,7 @@
   var MENU_ORDER = ["menu", "dinner-menu", "course-menu"];
   var CMS_CONFIG = window.TSUBAKITEI_MENU_CMS || {};
   var formatPriceText = window.TsubakiteiPrice.formatPriceText;
+  var formatDinnerPriceText = window.TsubakiteiPrice.formatDinnerPriceText;
 
   var tabsEl = document.getElementById("menu-tabs");
   var leadEl = document.getElementById("menu-lead");
@@ -31,7 +32,7 @@
 
   function priceHtml(item) {
     if (item.priceText) {
-      var formatted = formatPriceText(item.priceText);
+      var formatted = item.isDinner ? formatDinnerPriceText(item.priceText) : formatPriceText(item.priceText);
       if (item.isDinnerMain) {
         return formatted.split(/(?=■[SML]定食)/).filter(Boolean).map(function (line) {
           return '<span class="size-price-line">' + esc(line.trim()) + '</span>';
@@ -69,7 +70,7 @@
       if (nameParts.length) html += '<div class="name-details">' + esc(nameParts.join("\n")) + "</div>";
       if (item.description) html += '<div class="desc">' + esc(item.description) + "</div>";
       html += "</div>";
-      var p = priceHtml({ priceText: item.priceText, variants: item.variants, price: item.price, isDinnerMain: isDinnerMain });
+      var p = priceHtml({ priceText: item.priceText, variants: item.variants, price: item.price, isDinnerMain: isDinnerMain, isDinner: menuId === "dinner-menu" });
       if (p) html += '<div class="price">' + p + "</div>";
       html += "</div>";
       if (isDinnerMain && !nextIsDinnerMain) html += "</div>";
@@ -106,6 +107,12 @@
     menu.sections.forEach(function (sec) {
       if (!sec.items.length && !sec.description) return;
       html += '<div class="menu-section"><h3>' + esc(sec.name) + "</h3>";
+      if (menu.id === "menu" && sec.name === "ランチメニュー") {
+        html += '<p class="price-note">※ランチの価格は税込です。</p>';
+      }
+      if (menu.id === "dinner-menu" && sec.name === "ディナーメニュー") {
+        html += '<p class="price-note">※価格は税抜表示です。カッコ内は税込価格です。</p>';
+      }
       if (sec.description) html += '<p class="sec-desc">' + esc(sec.description) + "</p>";
       html += renderSectionItems(sec.items, menu.id);
       html += "</div>";

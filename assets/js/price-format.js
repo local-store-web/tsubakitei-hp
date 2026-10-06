@@ -3,6 +3,9 @@
   function formatPriceText(value) {
     return String(value == null ? "" : value).replace(/[¥￥]/g, "");
   }
-  root.TsubakiteiPrice = { formatPriceText: formatPriceText };
-  if (typeof module !== "undefined" && module.exports) module.exports = { formatPriceText: formatPriceText };
+  function formatDinnerPriceText(value) {
+    return formatPriceText(value).replace(/(\d[\d,]*)\s*[（(]\s*(?:税込\s*)?(\d[\d,]*)\s*[）)]/g, "$1 ($2)");
+  }
+  root.TsubakiteiPrice = { formatPriceText: formatPriceText, formatDinnerPriceText: formatDinnerPriceText };
+  if (typeof module !== "undefined" && module.exports) module.exports = { formatPriceText: formatPriceText, formatDinnerPriceText: formatDinnerPriceText };
 })(typeof window !== "undefined" ? window : globalThis);
