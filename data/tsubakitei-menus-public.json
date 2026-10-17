@@ -1,0 +1,1756 @@
+{
+  "contents": [
+    {
+      "id": "lpayk4yem1e",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ランチメニュー"
+      ],
+      "sectionDescription": "全ての定食にはご飯とお味噌汁が付きます！\nご飯の大盛は無料です！",
+      "subsectionName": [],
+      "name": "A. ハンバーグステーキ",
+      "priceText": "Sサイズ（150g） ￥1,100 / Mサイズ（185g） ￥1,200",
+      "sortOrder": 10,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/6cc24bb1135640e5a81c36021e7b090d/14574AB8-4673-43C7-9557-5A012349900A.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_c7c1cad32b2346c7984056ec038a60d3.png",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "ydhmayaudx",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ランチメニュー"
+      ],
+      "sectionDescription": " ",
+      "subsectionName": [],
+      "name": "B. 豚ロースの生姜焼き",
+      "priceText": "Sサイズ（100g） ￥1,100 / Mサイズ（125g） ￥1,200",
+      "sortOrder": 20,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/23acca1fb7b248bc83c7c7a579d3dfa4/%E2%91%AF.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_e69d275898444c7993fc8171bfff4dc8.png",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "6d8e631pdmjz",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ランチメニュー"
+      ],
+      "sectionDescription": "※税込み価格表示",
+      "subsectionName": [],
+      "name": "C. 白身魚フライ   　Sサイズ(白身魚3個)  /  Mサイズ(白身魚3個＋北海道産ホタテ1個)",
+      "priceText": "Sサイズ 1100 /  Mサイズ 1200",
+      "sortOrder": 30,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/170d0422b05c47158bd9eb8c12649c3d/%E2%91%B0.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_2b5cb4610bce45febc3487d0c2ae2b46.png",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "pip-jpzw4id",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ランチメニュー"
+      ],
+      "subsectionName": [],
+      "name": "D. エビフライ (数量限定)　 Sサイズ(エビ2本)  / Mサイズ(エビ3本)",
+      "priceText": "Sサイズ 1100  / Mサイズ 1300",
+      "sortOrder": 40,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/87b9b428ecdb4ac6b5301564941488c1/1AC6A79E-4D8F-4D1A-8377-2FDA3B9534C3.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_11ac4bbe422a49a4822c5633de73912e.png",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "n7s7wv4s6l9n",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ランチメニュー"
+      ],
+      "sectionDescription": "※税込み価格表示\n※数量限定",
+      "subsectionName": [],
+      "name": "E. ミックスフライ(数量限定)（エビ1本、白身魚2個、北海道産ホタテ1個）",
+      "priceText": "1400",
+      "sortOrder": 50,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/65d8fe3d9c50424a9665647cc29e9a05/%E2%91%AC.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_442a30d01ccf4b5f938880101f5126a6.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "k-pjwpqsy",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ランチメニュー"
+      ],
+      "subsectionName": [],
+      "name": "F. 洋食屋のカレー（辛口欧風カレー）",
+      "priceText": "￥1,300",
+      "sortOrder": 51,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/c6c65485e987445eb93da15d9b0d6926/%E3%89%96.jpg"
+      },
+      "takeoutAvailable": false
+    },
+    {
+      "id": "ysjem-tn893",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ランチメニュー"
+      ],
+      "subsectionName": [],
+      "name": "G. 本日の日替わり(数量限定)　",
+      "priceText": "金額はその日によって変わります。",
+      "sortOrder": 51.5,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/6de9bdd0965346e9b2def366893ed9f1/%E5%9B%9B%E7%9A%BF%E3%81%AE%E6%B4%8B%E9%A3%9F%E9%A2%A8%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%B3%E3%83%A9%E3%83%BC%E3%82%B8%E3%83%A5.png"
+      },
+      "takeoutAvailable": true
+    },
+    {
+      "id": "8a21zekjo",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "トッピングメニュー"
+      ],
+      "subsectionName": [],
+      "name": "温泉たまご",
+      "priceText": "￥100",
+      "sortOrder": 52,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "4p2u29h_k7m",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "トッピングメニュー"
+      ],
+      "subsectionName": [],
+      "name": "エビフライ 1本",
+      "priceText": "￥450",
+      "sortOrder": 53,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "5h5fsro04qkk",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "トッピングメニュー"
+      ],
+      "subsectionName": [],
+      "name": "北海道産ホタテフライ 1個",
+      "priceText": "￥300",
+      "sortOrder": 54,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "svryzr5h_j",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "トッピングメニュー"
+      ],
+      "subsectionName": [],
+      "name": "洋食屋のカレールー",
+      "priceText": "￥500",
+      "sortOrder": 55,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "shnl4n6gyeie",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "サイドメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "洋食屋のポテトサラダ",
+      "priceText": "￥600",
+      "sortOrder": 60,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "i07wah5j1",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "サイドメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "季節野菜のラタトゥイユ",
+      "priceText": "￥600",
+      "sortOrder": 70,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "fyqt4piyn",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "そば茶",
+      "priceText": "各￥200",
+      "sortOrder": 80,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "3jyn6bhr69",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "ウーロン茶",
+      "priceText": "各￥200",
+      "sortOrder": 90,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "3t-ei7m576bp",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "ジャスミン茶",
+      "priceText": "各￥200",
+      "sortOrder": 100,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "if0fn7c823j",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "紅茶（ICE・HOT）",
+      "priceText": "各￥200",
+      "sortOrder": 110,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "kh7-gjcjk",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "アイスコーヒー",
+      "priceText": "各￥200",
+      "sortOrder": 120,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "5_kve1_ye",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "竹炭コーヒー（HOT）",
+      "priceText": "各￥200",
+      "sortOrder": 130,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "00rmu0_yo_d",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "オレンジジュース",
+      "priceText": "各￥200",
+      "sortOrder": 140,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "kg-4mu6s-r",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "グレープフルーツジュース",
+      "priceText": "各￥200",
+      "sortOrder": 150,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "zu1d3ebv7nc",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "アップルジュース",
+      "priceText": "各￥200",
+      "sortOrder": 160,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "2yve0xw9n",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "トマトジュース",
+      "priceText": "各￥200",
+      "sortOrder": 170,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "rsg_8k8x58jc",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "スパークリングワイン",
+      "priceText": "￥300",
+      "sortOrder": 180,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "q49eaey49w",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "ワイングラス（赤・白）",
+      "priceText": "￥300",
+      "sortOrder": 190,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "xg3ko2twa",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "ランチビール",
+      "priceText": "￥300",
+      "sortOrder": 200,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "cgeymcao9_qk",
+      "visible": true,
+      "menuId": [
+        "Lunch"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "サッポロ生ビール（大）",
+      "priceText": "￥500",
+      "sortOrder": 210,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "a7g_4ei-mk02",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "ミニ季節野菜の冷製ラタトゥイユ",
+      "priceText": "300(330)",
+      "sortOrder": 220,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/ff615e3be79f40c5b8684fadf8af080f/%E2%91%A2.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_a859bf3155a9409cb6f107c9525afc3f.png",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "0iiyxn55vdj",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "ミニ洋食屋のポテトサラダ",
+      "priceText": "300(330)",
+      "sortOrder": 230,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/58f23770b0d2451bacdf2cfef88ad61a/%E2%91%A0.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_a859bf3155a9409cb6f107c9525afc3f.png",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "4csh0zyrv7zn",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "季節野菜の冷製ラタトゥイユ 〜新鮮野菜のトマト煮込み〜",
+      "priceText": "600(660)",
+      "sortOrder": 250,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/2086d78ed618410d9e3164432e7061a6/%E2%91%A3.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_5f79e04089934948885802fd1be95cb8.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "z_c2uq9_6ys",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "洋食屋のポテトサラダ 〜自家製マヨネーズで合わせました〜",
+      "priceText": "600(660)",
+      "sortOrder": 260,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/1154ba1ee5454796a1cdb5eb2b1f8286/%E2%91%A1.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_095625a363d34073805195796d42867d.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "mvi9flyr3",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "カマンベールチーズフライ",
+      "priceText": "600(660)",
+      "sortOrder": 290,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/7c2587b6837f4a7dbc6f8d52237a826d/%E2%91%A4.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_35dde5825df840838543d5952d4fe81c.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "qyxmy-uxn",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "フライドポテト 〜2種のソースで〜",
+      "priceText": "800(880)",
+      "sortOrder": 300,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/dfba31cfe3b54f9ab328a59aadc04cd8/%E2%91%A5.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_20cccea0a59a4b8590265f775d091f99.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "w_46uez1z",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "揚げ茄子のオードブル 〜茄子の素揚げ〜",
+      "priceText": "S：750(825) / L：850(935)",
+      "sortOrder": 310,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/7dfbfefe53d44468aa0fc9809a45609e/%E2%91%A6.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_b387c50e6bac4811a98f08e182972bba.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "nip8vlxunfn4",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "あさりとズッキーニの白ワインスパイス蒸し",
+      "priceText": "900(990)",
+      "sortOrder": 320,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/d61dacc49fb54c3c9e0d21a4f71f24a3/%E2%91%A7.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_7af2905f0a1c437e93007801fba77145.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "aof_7ntg5yf",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "subsectionName": [],
+      "name": "季節の玉ねぎで作るオニオングラタンスープ",
+      "priceText": "850(935)",
+      "sortOrder": 321,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/5acf4d01a2514701b5c9d7f540f956f0/%E2%91%A8.jpg"
+      },
+      "takeoutAvailable": false
+    },
+    {
+      "id": "nwtjf3foo",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "グリーンサラダ 〜自家製野菜生ドレッシングで〜",
+      "priceText": "850(935)　(＋300円で釜揚げシラストッピング)",
+      "sortOrder": 330,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/3f3e798e44d74443a8adfb5e44717e85/%E2%91%A9.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_1a98a12b15bd4ccf9e04300127a292cb.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "ry5v5y8bhrx",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": "※Sサイズには温泉たまごは付きません。100円で付けられます。\nLサイズ以上のオーダーも可能です。",
+      "subsectionName": [],
+      "name": "ハンバーグステーキ 定食　[伝説ツバキソース(トマトとレモンベースの酸味のある定番ソース)]　or　[特製ハンバーグソース(玉ねぎと醤油の和風ソース)]　■Sサイズ(150g)　■Mサイズ(185g)　■Lサイズ(220g)",
+      "priceText": "■S定食 1250(1375)・S単品 1050(1155)　■M定食 1450(1595)・M単品 1250(1375)  ■L定食 1650(1815)・L単品 1450(1595)",
+      "sortOrder": 340,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/2a31254b6a054ade825bf5ee62ee75de/%E2%91%AE.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_c7c1cad32b2346c7984056ec038a60d3.png",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "i8ryjot5ks",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": "100円で玉ねぎが一緒に焼けます。Lサイズ以上のオーダーも可能です。",
+      "subsectionName": [],
+      "name": "豚ロース生姜焼き　■Sサイズ(100g)　■Mサイズ(125g)　■Lサイズ(150g)",
+      "priceText": "■S定食 1250(1375)・S単品 1050(1155)　■M定食 1450(1595)・M単品 1250(1375) ■L定食 1650(1815)・L単品 1450(1595)",
+      "sortOrder": 360,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/b4aa794c4b7841d3bbc23ed32624111b/%E2%91%AF.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_e69d275898444c7993fc8171bfff4dc8.png",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "xem_ne80p",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "白身魚フライ定食　■Sサイズ(白身魚3個)　■Mサイズ(白身魚3個＋北海道産ホタテ)　■Lサイズ(白身魚5個＋北海道産ホタテ)",
+      "priceText": "■S定食 1250(1375)・S単品 1050(1155)　■M定食 1450(1595)・M単品 1250(1375) ■L定食 1650(1815)・L単品 1450(1595)",
+      "sortOrder": 370,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/1a6869a22fc34a5d852a29c1fde1dd54/%E2%91%B0.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_7a92dd37b1044be7aaaccb1e77bb11da.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "dfju9m_rbw",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "subsectionName": [],
+      "name": "ハンバーグステーキ＆豚ロース生姜焼き MIX",
+      "priceText": "1650(1815)",
+      "sortOrder": 375,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/9fc793e892954341a45d6712693a4593/%E2%91%AA.jpg"
+      },
+      "takeoutAvailable": false
+    },
+    {
+      "id": "c5lx6h4zt32c",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": "トッピングで一本からでもオーダー可能です",
+      "subsectionName": [],
+      "name": "エビフライ",
+      "priceText": "1350(1485)",
+      "sortOrder": 380,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/ce93ffa6ca744d0ebf3e5968f0611184/%E2%91%AB.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_501d7c00d3624365ad4d76715052eeae.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "fujkl1ih2-ze",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "subsectionName": [],
+      "name": "ミックスフライ（エビ1本、白身魚2個、北海道産ホタテ1個）",
+      "priceText": "1450(1595)",
+      "sortOrder": 385,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/6188b73ec61843868a5bdbc01334a33e/%E2%91%AC.jpg"
+      },
+      "takeoutAvailable": true
+    },
+    {
+      "id": "9_rvecy5bo",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "subsectionName": [],
+      "name": "北海道産ホタテフライ（1個)",
+      "priceText": "350(385)",
+      "sortOrder": 386,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/9aae16dd0e90415aba1af666c229ad00/%E2%91%AD.jpg"
+      },
+      "takeoutAvailable": true
+    },
+    {
+      "id": "oqpfd5_23w1",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "三元豚ロースのカツレツ 〜デミグラスソースとグリュエールチーズで〜",
+      "priceText": "1300(1430)",
+      "sortOrder": 390,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/194a3fbcb8904cf3bad87d674afb4793/%E2%91%B1.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_dfab24c169874265a77cf1b3b176635b.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "i5s1l5a6p5l",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "ガーリックチキンステーキ 〜しめじとベーコンの和風ソースで〜",
+      "priceText": "1380",
+      "sortOrder": 400,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/2540e0489ee544bd8bc8156e206ce36c/%E2%91%B2.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_f4e6c48e4bb147d29095fa38f37e294f.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "jil3kld831",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "アッシュパルマンティエ 〜牛挽肉とマッシュポテトのグラタン〜",
+      "priceText": "1200(1320)",
+      "sortOrder": 410,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/fafa3975e1b84bc4b1637242a958159b/%E3%89%91.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_31aae05f7ef54d26b6b4493b5e572010.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "2iihpt2fhc",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "昔ながらのスパゲッティナポリタン",
+      "priceText": "普通盛り 1100(1210) / 大盛  1480(1628) ",
+      "sortOrder": 420,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/df009d385e944b6ead989ee1a7859998/%E3%89%92.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_6b95a3533b1146b39aae381730e08f89.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "55nbe_pkcvj",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "オムライス 〜特製デミグラスソースで〜",
+      "priceText": "1200(1320)",
+      "sortOrder": 430,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/1742c523c96645cea8cbf272676f8adb/%E3%89%93.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_b37f090701ea415dbd09890d3d584dd0.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "pmy6kgqq7p",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "牛すじピラフ 温玉のせ",
+      "priceText": "1200(1320)",
+      "sortOrder": 440,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/73ab794b42824bf99d7305230bfc11b7/%E3%89%94.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_48296b798c894fbcaa2d10108ee1fc0d.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "iosbcl-2m",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "ライス・味噌汁セット",
+      "priceText": "350(385)",
+      "sortOrder": 470,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/7b6f0780be0041a28f2ec7b0513126a6/%E3%89%97.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_fbeb302f4ee7484e9dc29377c9029845.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "3ylxzs9xlz",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ディナーメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "カリカリバケット",
+      "priceText": "300(330)",
+      "sortOrder": 480,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/d8f0d5d463e947be9dad61533dd9f7c7/%E3%89%98.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_44828bdd79774fd4b0db2fe8a8668f7e.jpg",
+      "takeoutAvailable": true
+    },
+    {
+      "id": "qz5_x6vsest",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "デザートメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "バニラビーンズアイス",
+      "priceText": "400(440)",
+      "sortOrder": 490,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/e5a264263706466c80462b9ff0998ee3/%E3%89%99.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_898dfd5d0b7943ad8be617f99bc579e8.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "c460_nr4xrr",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "デザートメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "チョコレートアイス",
+      "priceText": "400(440)",
+      "sortOrder": 500,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/f83cb85777e246aeaf37c5ceacaa71f1/%E3%89%9A.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_135b261b813e493c9d551260af876a4a.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "nt48tcyqk",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "デザートメニュー"
+      ],
+      "sectionDescription": null,
+      "subsectionName": [],
+      "name": "100% 赤葡萄シャーベット",
+      "priceText": "400(440)",
+      "sortOrder": 510,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/e2fe5b9bf7284292acabe6bb36a0a572/%E3%89%9B.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_978beff2528d43b4895606fc8fae0ccb.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "rbyvqbn_sd",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "デザートメニュー"
+      ],
+      "subsectionName": [],
+      "name": "自家製ティラミス 〜マスカルポーネ仕立て〜",
+      "priceText": "700(770)",
+      "sortOrder": 520,
+      "image": {
+        "url": "https://images.microcms-assets.io/assets/c27e78a87ad84ce498552793e9b46566/389d2220fca54844b357be032452a8c3/%E3%89%9C.jpg"
+      },
+      "imagePath": "assets/img/menu/9cfb46_1a8bed7f8dbf44ad9687017cc22275e6.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "dse8753-o48",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "生ビール",
+      "priceText": "￥550（税込￥605）",
+      "sortOrder": 541.01,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "d0yftqjdq",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "小ビール",
+      "priceText": "￥380（税込￥418）",
+      "sortOrder": 541.02,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "vlbutx5fbn8x",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "ハイボール（Dewar's）",
+      "priceText": "￥550（税込￥605）",
+      "sortOrder": 541.03,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "2djn65bzlk1a",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "レモンサワー",
+      "priceText": "￥500（税込￥550）",
+      "sortOrder": 541.04,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "7ez0dgie72k",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "スパークリングワイン グラス",
+      "priceText": "￥550（税込￥605）",
+      "sortOrder": 541.05,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "5az2e6mbrx",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "ハウスワイン（赤・白）グラス",
+      "priceText": "￥550（税込￥605）",
+      "sortOrder": 541.06,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "o88dq1e0sd",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "ハウスワイン カラフェ",
+      "priceText": "￥1,650（税込￥1,815）",
+      "sortOrder": 541.07,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "u0p0vp7hle",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "ウーロンハイ",
+      "priceText": "￥550（税込￥605）",
+      "sortOrder": 541.08,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "p_zi4n1430a",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "ジャスミンハイ",
+      "priceText": "￥550（税込￥605）",
+      "sortOrder": 541.09,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "a5z26wu0unc",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "焼酎"
+      ],
+      "name": "鍛高譚（紫蘇焼酎）",
+      "priceText": "￥550（税込￥605）",
+      "sortOrder": 541.095,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "z5569fuie",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "焼酎"
+      ],
+      "name": "れんと（黒糖焼酎）",
+      "priceText": "￥550（税込￥605）",
+      "sortOrder": 541.096,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "px4f_1592v",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "焼酎"
+      ],
+      "name": "花札焼酎（芋・麦）",
+      "priceText": "￥600（税込￥660）",
+      "sortOrder": 541.097,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "gnqtzsi6w",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "ウイスキー各種"
+      ],
+      "name": "I.W. ハーパー",
+      "priceText": "￥600（税込￥660）",
+      "sortOrder": 541.1,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "n3z57ermb",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "ウイスキー各種"
+      ],
+      "name": "ブラントン",
+      "priceText": "￥950（税込￥1,045）",
+      "sortOrder": 541.11,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "rz5gtxvaslu",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "ウイスキー各種"
+      ],
+      "name": "ラフロイグ 10年",
+      "priceText": "￥950（税込￥1,045）",
+      "sortOrder": 541.12,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "p-sm7ktq8d",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "ウイスキー各種"
+      ],
+      "name": "シーバスリーガル ミズナラ 12年",
+      "priceText": "￥950（税込￥1,045）",
+      "sortOrder": 541.13,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "fqffqve39cqs",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "ウイスキー各種"
+      ],
+      "name": "山崎（ノンエイジ）",
+      "priceText": "￥950（税込￥1,045）",
+      "sortOrder": 541.14,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "ghnj390n_hn",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "ウイスキー各種"
+      ],
+      "name": "山崎 12年",
+      "priceText": "時価（スタッフにお尋ねください）",
+      "sortOrder": 541.15,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "3o-rpyq6wro",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "ブランデー"
+      ],
+      "name": "カミュ VSOP",
+      "priceText": "￥950（税込￥1,045）",
+      "sortOrder": 541.16,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "s0p96-aszauw",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "日本酒"
+      ],
+      "name": "日本酒",
+      "priceText": "美味しいのあります！スタッフにお問い合わせください。",
+      "sortOrder": 541.17,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "72lukgit4ry4",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "リキュール"
+      ],
+      "name": "花札梅酒",
+      "priceText": "￥600（税込￥660）",
+      "sortOrder": 541.18,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "ecslpeom4",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "リキュール"
+      ],
+      "name": "とろとろ梅酒",
+      "priceText": "￥700（税込￥770）",
+      "sortOrder": 541.19,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "ndgouc4ck4n",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [
+        "リキュール"
+      ],
+      "name": "赤短梅酒",
+      "priceText": "￥750（税込￥825）",
+      "sortOrder": 541.2,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "6cptjhaxpv7g",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "アルコール"
+      ],
+      "subsectionName": [],
+      "name": "自家製サングリア（赤・白）",
+      "priceText": "￥650（税込￥715）",
+      "sortOrder": 541.21,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "3jb55ep1d5",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "100% オレンジジュース",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.01,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "1ay7ezeqe2",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "100% グレープフルーツジュース",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.02,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "sd1w_tjlr",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "100% アップルジュース",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.03,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "lu7ut3hcbl1",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "100% トマトジュース",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.04,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "z_0nkfljdn",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "コーラ",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.05,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "byzq07mz5lw9",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "ジンジャーエール",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.06,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "r3t_ki63q1",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "そば茶",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.07,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "2w83zpgtbqzu",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "ウーロン茶",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.08,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "53p73opkb",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "ジャスミン茶",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.09,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "6sfu-9_c_n",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "竹炭コーヒー（HOT）〜竹炭焙煎〜",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.1,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "8lrspkz-x5",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "アイスコーヒー",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.11,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "bbsqxqlvyt1v",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "エスプレッソ",
+      "priceText": "￥500（税込￥550）",
+      "sortOrder": 542.12,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "h_22u_ymf",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "紅茶（ICE・HOT）",
+      "priceText": "￥400（税込￥440）",
+      "sortOrder": 542.13,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "zsncpfkau52",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "バナナ MIX スペシャル",
+      "priceText": "￥650（税込￥715）",
+      "sortOrder": 542.14,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "fg-r4mkcqf1",
+      "visible": true,
+      "menuId": [
+        "Dinner"
+      ],
+      "sectionName": [
+        "ソフトドリンク"
+      ],
+      "subsectionName": [],
+      "name": "いちご MIX スペシャル",
+      "priceText": "￥650（税込￥715）",
+      "sortOrder": 542.15,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "nsc4zsy3xfzu",
+      "visible": true,
+      "menuId": [
+        "Course"
+      ],
+      "sectionName": [
+        "コース料理"
+      ],
+      "sectionDescription": "-6名様以上からご利用可能な「お得な飲み放題付きコース」がございます。\n-季節やお客様リクエストにより内容の変更が有ります。\n-その他、ご不明点、ご要望については直接お電話にてお問い合わせください。\n(税込6,490円～)\n※飲み放題は1000円分のお得なコース。\n(飲み放題を付けない場合は5490円から承りますが、その場合お一人様１ドリンク制とさせていただいております。)",
+      "subsectionName": [],
+      "name": "平日（月〜木）コース",
+      "priceText": null,
+      "sortOrder": 550,
+      "imagePath": "assets/img/menu/9cfb46_7a92dd37b1044be7aaaccb1e77bb11da.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "ng2ot3hkc8",
+      "visible": true,
+      "menuId": [
+        "Course"
+      ],
+      "sectionName": [
+        "コース料理"
+      ],
+      "sectionDescription": "-6名様以上からご利用可能な「お得な飲み放題付きコース」がございます。\n-季節やお客様リクエストにより内容の変更が有ります。\n-その他、ご不明点、ご要望については直接お電話にてお問い合わせください。\n(税込7,490円～)\n※飲み放題は1000円分のお得なコース。\n(飲み放題を付けない場合は6490円から承りますが、その場合お一人様１ドリンク制とさせていただいております。)",
+      "subsectionName": [],
+      "name": "金土日・祝日コース",
+      "priceText": null,
+      "sortOrder": 560,
+      "imagePath": "assets/img/menu/9cfb46_8ec565c4f994405f9572ca933c596f64.jpg",
+      "takeoutAvailable": false
+    },
+    {
+      "id": "k48gtqa-2",
+      "visible": true,
+      "menuId": [
+        "Course"
+      ],
+      "sectionName": [
+        "メニュー例"
+      ],
+      "sectionDescription": "・洋食屋のポテトサラダ 自家製マヨネーズ仕立て\n・アボカドの醤油漬け\n・グリーンサラダ 自家製の野菜生ドレッシングで\n・コンブと海老のサラダ\n・カツオのたたきと水菜の粒マスタードサラダ\n・カマンベールチーズのフライ\n・フライドポテト〜二種のソースで〜\n・ねぎトロバゲット\n・広島県産カキフライ\n・北海道産帆立貝柱のフライ\n・5種のキノコのキノコパーティー ～トマトクリームソースで～\n・チーズ入りメンチカツ\n・赤身ビーフステーキ〜北海道産山わさびと\n・昔ながらのスパゲティナポリタン",
+      "subsectionName": [],
+      "name": null,
+      "priceText": null,
+      "sortOrder": 565,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "qjmg4w6cz",
+      "visible": true,
+      "menuId": [
+        "Course"
+      ],
+      "sectionName": [
+        "ドリンク"
+      ],
+      "sectionDescription": "その他、下記記載の混合によるカクテルなども含まれます。\n例）カシスオレンジ・グレープフルーツサワー・レモンサワー\n・サッポロ生ビール\n・樽生スパークリングワイン\n・グラスワイン 赤/白\n・Deward’s (ウイスキー)\n・Deward’s ハイボール/コーク/ジンジャーエール\n・サッポロ焼酎\n・レモンサワー\n・グレープフルーツサワー",
+      "subsectionName": [],
+      "name": "アルコール",
+      "priceText": null,
+      "sortOrder": 570,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "7et-a4eiff",
+      "visible": true,
+      "menuId": [
+        "Course"
+      ],
+      "sectionName": [
+        "ドリンク"
+      ],
+      "sectionDescription": "その他、下記記載の混合によるカクテルなども含まれます。\n例）カシスオレンジ・グレープフルーツサワー・レモンサワー\n・カシス\n・カンパリ\n・ウォッカ\n・ラム\n・ウイスキー",
+      "subsectionName": [],
+      "name": "リキュール",
+      "priceText": null,
+      "sortOrder": 580,
+      "imagePath": null,
+      "takeoutAvailable": false
+    },
+    {
+      "id": "u4jt-bgz7i",
+      "visible": true,
+      "menuId": [
+        "Course"
+      ],
+      "sectionName": [
+        "ドリンク"
+      ],
+      "sectionDescription": "その他、下記記載の混合によるカクテルなども含まれます。\n例）カシスオレンジ・グレープフルーツサワー・レモンサワー\n・オレンジジュース\n・アップルジュース\n・グレープフルーツジュース\n・アイス/ホットコーヒー\n・ジンジャーエール\n・コーラ\n・トマトジュース\n・ウーロン茶\n・ジャスミン茶\n・そば茶",
+      "subsectionName": [],
+      "name": "ソフトドリンク",
+      "priceText": null,
+      "sortOrder": 590,
+      "imagePath": null,
+      "takeoutAvailable": false
+    }
+  ]
+}

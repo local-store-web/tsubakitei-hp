@@ -1,0 +1,15 @@
+# Keep authentication material and local build artifacts outside Git.
+.env
+.env.*
+*.key
+*.pem
+.microcms-key
+_private/
+private/
+*.secret
+config/private.*
+node_modules/
+test-results/
+dist/
+*.pending
+.DS_Store

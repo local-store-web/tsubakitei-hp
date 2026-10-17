@@ -4,8 +4,8 @@
 (function () {
   var scriptSrc = (document.currentScript && document.currentScript.getAttribute("src")) || "";
   var basePath = scriptSrc.replace(/assets\/js\/deli-menu\.js(?:\?.*)?$/, "");
-  var LOCAL_DATA_URL = basePath + "data/deli-menu.json";
   var CMS_CONFIG = window.TSUBAKITEI_DELI_MENU_CMS || {};
+  var LOCAL_DATA_URL = basePath + (CMS_CONFIG.publicSnapshotPath || "data/deli-menu.json");
   var formatPriceText = window.TsubakiteiPrice.formatPriceText;
   var bodyEl = document.getElementById("deli-menu-body");
 
@@ -99,6 +99,15 @@
   }
 
   function loadData() {
+    if (CMS_CONFIG.proxyUrl) {
+      return fetchJson(CMS_CONFIG.proxyUrl, { cache: "no-store" }).then(function (data) {
+        if (!data || !Array.isArray(data.contents)) throw new Error("Invalid deli proxy response");
+        return data;
+      }).catch(function (e) {
+        console.warn("Server deli endpoint unavailable; using public snapshot.", e);
+        return fetchJson(LOCAL_DATA_URL, { cache: "no-cache" });
+      });
+    }
     if (CMS_CONFIG.enabled && CMS_CONFIG.serviceDomain && CMS_CONFIG.endpoint && CMS_CONFIG.apiKey) {
       return fetchJson(microCmsUrl(), {
         cache: "no-cache",

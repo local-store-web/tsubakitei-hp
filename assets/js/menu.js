@@ -3,10 +3,10 @@
  * 未設定/取得失敗時は ../data/menu.json にfallbackする。
  */
 (function () {
-  var LOCAL_DATA_URL = "../data/menu.json";
+  var CMS_CONFIG = window.TSUBAKITEI_MENU_CMS || {};
+  var LOCAL_DATA_URL = CMS_CONFIG.publicSnapshotUrl || "../data/menu.json";
   var LABELS = { "menu": "Lunch", "dinner-menu": "Dinner", "course-menu": "Course" };
   var MENU_ORDER = ["menu", "dinner-menu", "course-menu"];
-  var CMS_CONFIG = window.TSUBAKITEI_MENU_CMS || {};
   var formatPriceText = window.TsubakiteiPrice.formatPriceText;
   var formatDinnerPriceText = window.TsubakiteiPrice.formatDinnerPriceText;
 
@@ -310,7 +310,22 @@
     return fetchCmsContents(CMS_CONFIG.fallbackEndpoint);
   }
 
+  function loadLocalMenu() {
+    return fetchJson(LOCAL_DATA_URL, { cache: "no-cache" }).then(function (data) {
+      return data && Array.isArray(data.contents) ? microCmsToMenus(data) : data;
+    });
+  }
+
   function loadMenuData() {
+    if (CMS_CONFIG.proxyUrl) {
+      return fetchJson(CMS_CONFIG.proxyUrl, { cache: "no-store" }).then(function (data) {
+        if (!data || !Array.isArray(data.contents)) throw new Error("Invalid menu proxy response");
+        return microCmsToMenus(data);
+      }).catch(function (e) {
+        console.warn("Server menu endpoint unavailable; using public snapshot.", e);
+        return loadLocalMenu();
+      });
+    }
     if (CMS_CONFIG.enabled && CMS_CONFIG.serviceDomain && CMS_CONFIG.endpoint && CMS_CONFIG.apiKey) {
       return fetchCmsContents(CMS_CONFIG.endpoint).then(function (data) {
         if (CMS_CONFIG.fallbackEndpoint && (!data.contents || !data.contents.length)) {
@@ -324,10 +339,10 @@
         return fetchLegacyMenu();
       }).then(microCmsToMenus).catch(function (e) {
         console.warn("microCMS menu load failed. Fallback to local JSON.", e);
-        return fetchJson(LOCAL_DATA_URL, { cache: "no-cache" });
+        return loadLocalMenu();
       });
     }
-    return fetchJson(LOCAL_DATA_URL, { cache: "no-cache" });
+    return loadLocalMenu();
   }
 
   function renderTabs(menus) {
