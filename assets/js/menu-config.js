@@ -1,12 +1,12 @@
-/* microCMS Hobby用メニュー設定
- * enabledをtrueにするとmicroCMSを正本にします。
- * apiKeyはGET権限だけのキーを入れてください。WRITE権限は絶対に付けないでください。
+/* Public browser settings: no API keys or credentials.
+ * GitHub Pages uses a public-data snapshot. The canonical site uses
+ * a same-origin Xserver PHP endpoint, with the credential server-side.
  */
-window.TSUBAKITEI_MENU_CMS = {
-  enabled: true,
-  serviceDomain: "tsubakitei-hp",
-  endpoint: "tsubakitei-menus",
-  fallbackEndpoint: "menus",
-  apiKey: "brnmMHIWz08CI25Z3AhCLywFSROA8AbKdsfq",
-  queries: "limit=100&orders=sortOrder"
-};
+(function (root) {
+  var canonical = /^(www\.)?tsubakitei\.com$/i.test(root.location && root.location.hostname || "");
+  root.TSUBAKITEI_MENU_CMS = {
+    enabled: false,
+    proxyUrl: canonical ? "/api/menu.php?store=tsubakitei" : "",
+    publicSnapshotUrl: "../data/tsubakitei-menus-public.json"
+  };
+})(window);
